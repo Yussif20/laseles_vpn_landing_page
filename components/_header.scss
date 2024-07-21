@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  &__nav {
+    display: flex;
+    gap: 2.4rem;
+    &--link {
+      transition: var(--timing-animation) ease-in-out;
+      &:link,
+      :visited {
+        color: var(--color-dark-grey);
+      }
+      &:hover,
+      :active {
+        color: var(--color-red);
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+    &--signup,
+    &--signin {
+      font-weight: 500;
+      padding: 1.2rem 2.6rem;
+      border-radius: 2rem;
+      transition: var(--timing-animation) ease-out;
+    }
+    &--signup {
+      color: var(--color-red);
+      border: 1px solid var(--color-red);
+      &:hover {
+        color: var(--color-white);
+        background-color: var(--color-red);
+      }
+    }
+    &--signin:hover {
+      color: var(--color-red);
+    }
+  }
+}

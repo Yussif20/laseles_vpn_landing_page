@@ -1,3 +1,11 @@
+:root {
+  --color-white: #fff;
+  --color-dark-grey: #4f5665;
+  --color-very-dark-grey: #0b132a;
+  --color-red: #f53838;
+  --timing-animation: 0.3s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +17,69 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-dark-grey);
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.header__nav {
+  display: flex;
+  gap: 2.4rem;
+}
+.header__nav--link {
+  transition: var(--timing-animation) ease-in-out;
+}
+.header__nav--link:link,
+.header__nav--link :visited {
+  color: var(--color-dark-grey);
+}
+.header__nav--link:hover,
+.header__nav--link :active {
+  color: var(--color-red);
+}
+.header__buttons {
+  display: flex;
+  gap: 2rem;
+}
+.header__buttons--signup, .header__buttons--signin {
+  font-weight: 500;
+  padding: 1.2rem 2.6rem;
+  border-radius: 2rem;
+  transition: var(--timing-animation) ease-out;
+}
+.header__buttons--signup {
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+}
+.header__buttons--signup:hover {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+.header__buttons--signin:hover {
+  color: var(--color-red);
 }/*# sourceMappingURL=styles.css.map */
