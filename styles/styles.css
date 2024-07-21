@@ -32,13 +32,47 @@ a {
 
 body {
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth scroll;
   font-size: 1.6rem;
   color: var(--color-dark-grey);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-grey);
 }
 
 .container {
   max-width: 90%;
   margin: 0 auto;
+}
+
+section {
+  padding: 4.6rem 0;
+}
+
+.cta-btn {
+  background-color: var(--color-red);
+  color: white;
+  border: none;
+  transition: var(--timing-animation) ease-out;
+}
+.cta-btn:hover {
+  background-color: var(--color-white);
+  color: red;
+  cursor: pointer;
+  outline: 1px solid var(--color-red);
 }
 
 .header {
@@ -82,4 +116,29 @@ body {
 }
 .header__buttons--signin:hover {
   color: var(--color-red);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+.about__content {
+  flex: 1;
+}
+.about__content--title {
+  color: var(--color-very-dark-grey);
+  font-size: 5rem;
+  line-height: 7rem;
+  font-weight: 500;
+}
+.about__content--text {
+  margin: 1.2rem 0;
+  line-height: 3rem;
+}
+.about__content--btn {
+  border-radius: 1.2rem;
+  padding: 2rem 10rem;
+}
+.about__image {
+  flex: 1;
 }/*# sourceMappingURL=styles.css.map */

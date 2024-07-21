@@ -1,0 +1,24 @@
+.about {
+  display: flex;
+  align-items: center;
+  &__content {
+    flex: 1;
+    &--title {
+      color: var(--color-very-dark-grey);
+      font-size: 5rem;
+      line-height: 7rem;
+      font-weight: 500;
+    }
+    &--text {
+      margin: 1.2rem 0;
+      line-height: 3rem;
+    }
+    &--btn {
+      border-radius: 1.2rem;
+      padding: 2rem 10rem;
+    }
+  }
+  &__image {
+    flex: 1;
+  }
+}
