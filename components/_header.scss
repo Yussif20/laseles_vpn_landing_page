@@ -28,14 +28,7 @@
       border-radius: 2rem;
       transition: var(--timing-animation) ease-out;
     }
-    &--signup {
-      color: var(--color-red);
-      border: 1px solid var(--color-red);
-      &:hover {
-        color: var(--color-white);
-        background-color: var(--color-red);
-      }
-    }
+
     &--signin:hover {
       color: var(--color-red);
     }
