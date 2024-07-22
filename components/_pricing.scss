@@ -15,16 +15,64 @@
 .pricing__plans {
   margin-top: 4.6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4.6rem;
   &--plan {
+    height: 76rem;
+    width: 33rem;
     padding: 3rem 2rem;
+    border-radius: 1.2rem;
     display: flex;
+    justify-content: center;
     justify-content: center;
     gap: 3.6rem;
     flex-direction: column;
-    border: 1px dotted var(--color-red);
+    border: 1px solid #ddd;
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 14.5rem;
+    }
+    &:last-of-type {
+      border-color: #f53838;
+    }
     h3 {
       text-align: center;
+    }
+    ul {
+      margin: 0 auto;
+      li {
+        margin-bottom: 2.6rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        i {
+          color: rgb(42, 147, 42);
+        }
+      }
+    }
+    &-price {
+      margin-top: auto;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 3rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      width: 17rem;
+      padding: 1.2rem 2.4rem;
+      border-radius: 1.2rem;
+      font-weight: 600;
     }
   }
 }
