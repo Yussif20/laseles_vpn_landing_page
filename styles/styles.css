@@ -44,6 +44,7 @@ body {
   scroll-behavior: smooth scroll;
   font-size: 1.6rem;
   color: var(--color-dark-grey);
+  background-color: #f8f8f8;
 }
 
 ::-webkit-scrollbar {
@@ -170,6 +171,8 @@ section {
 }
 
 .features__header {
+  background-color: var(--color-white);
+  border-radius: 1.2rem;
   padding: 2.4rem 4rem;
   display: flex;
   align-items: center;
@@ -232,6 +235,7 @@ section {
   gap: 4.6rem;
 }
 .pricing__plans--plan {
+  background-color: var(--color-white);
   height: 76rem;
   width: 33rem;
   padding: 3rem 2rem;
