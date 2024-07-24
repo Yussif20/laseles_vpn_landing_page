@@ -4,6 +4,7 @@ body {
   font-size: 1.6rem;
   color: var(--color-dark-grey);
   background-color: #f8f8f8;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;

@@ -1,3 +1,19 @@
+.testimonials {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    width: 100vw;
+    height: 120%;
+    background-color: var(--color-white);
+    z-index: -1;
+  }
+}
 .testimonials__container {
   padding: 4.2rem 0;
   display: flex;
@@ -6,6 +22,10 @@
     flex: 1;
     padding: 2rem 2.6rem;
     border-radius: 1.2rem;
+    border: 1px solid #dddddd;
+    &:first-of-type {
+      border-color: var(--color-red);
+    }
     background-color: var(--color-white);
     &-header {
       display: flex;
@@ -26,6 +46,7 @@
   }
 }
 .testimonials__controls {
+  align-self: stretch;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +70,7 @@
       background-color: var(--color-red);
       color: white;
       &:hover {
+        background-color: #f77b7b;
       }
     }
   }
