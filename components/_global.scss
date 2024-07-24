@@ -58,6 +58,7 @@ section {
 .cta-btn {
   background-color: var(--color-red);
   color: white;
+  font-weight: bold;
   border: none;
   transition: var(--timing-animation) ease-out;
   &:hover {

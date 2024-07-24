@@ -101,6 +101,7 @@ section {
 .cta-btn {
   background-color: var(--color-red);
   color: white;
+  font-weight: bold;
   border: none;
   transition: var(--timing-animation) ease-out;
 }
@@ -292,6 +293,76 @@ section {
   padding: 1.2rem 2.4rem;
   border-radius: 1.2rem;
   font-weight: 600;
+}
+
+.testimonials__container {
+  padding: 4.2rem 0;
+  display: flex;
+  gap: 2.4rem;
+}
+.testimonials__container--card {
+  flex: 1;
+  padding: 2rem 2.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--color-white);
+}
+.testimonials__container--card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.testimonials__container--card-header-writer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.testimonials__container--card-content {
+  color: var(--color-very-dark-grey);
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.testimonials__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__controls--arrows {
+  display: flex;
+  gap: 1.5rem;
+}
+.testimonials__controls--arrows i {
+  padding: 1.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.testimonials__controls--arrows .fa-arrow-left {
+  background-color: white;
+  color: var(--color-red);
+}
+.testimonials__controls--arrows .fa-arrow-left:hover {
+  background-color: #f0f0f0;
+}
+.testimonials__controls--arrows .fa-arrow-right {
+  background-color: var(--color-red);
+  color: white;
+}
+.testimonials__controls--dots {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.testimonials__controls--dots i {
+  transition: all 0.3s ease-in-out;
+  color: #dde0e4;
+}
+.testimonials__controls--dots i:first-of-type {
+  color: var(--color-red);
+}
+.testimonials__controls--dots i:hover {
+  color: #f77b7b;
 }
 
 .footer {
