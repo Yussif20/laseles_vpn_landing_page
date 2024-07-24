@@ -8,6 +8,9 @@
       font-size: 5rem;
       line-height: 7rem;
       font-weight: 500;
+      @media (max-width: 450px) {
+        font-size: 4rem;
+      }
     }
     &--text {
       margin: 1.2rem 0;
@@ -20,5 +23,15 @@
   }
   &__image {
     flex: 1;
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    &__content {
+      text-align: center;
+    }
+    &__image {
+      margin-bottom: 5rem;
+      order: -1;
+    }
   }
 }

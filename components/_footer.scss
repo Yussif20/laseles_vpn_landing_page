@@ -1,6 +1,11 @@
 .footer {
   padding-top: 8.2rem;
   display: flex;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.4rem;
+  }
   &__info {
     flex: 0 1 50%;
     p {
@@ -32,6 +37,11 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 5rem;
+    }
     &--col {
       &_heading {
         font-weight: 600;
